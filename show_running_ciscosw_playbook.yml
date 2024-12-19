@@ -1,6 +1,6 @@
 ---
 - name: SHOW RUNNING-CONFIG
-  hosts: LOKI-SW
+  hosts: Proyecto-01_Inventory_Cisco
   no_log: false
   gather_facts: false
   connection: network_cli
