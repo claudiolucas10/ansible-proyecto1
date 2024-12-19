@@ -1,6 +1,6 @@
 ---
 - name: SHOW RUNNING-CONFIG
-  hosts: 192.168.200.253
+  hosts: LOKI-SW
   no_log: false
   gather_facts: false
   connection: network_cli
