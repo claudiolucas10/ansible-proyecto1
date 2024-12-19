@@ -1,0 +1,26 @@
+---
+- name: SHOW RUNNING-CONFIG
+  hosts: LOKI-SW
+  no_log: false
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+          #- name: DISPLAY THE RUNNING-CONFIG
+          #  ios_command:
+          #          commands:
+          #                  - show running-config
+          #  register: salida
+
+          #- name: SAVE OUTPUT TO ./backups-Cisco/
+          #  debug:
+          #    msg: "{{ salida.stdout }}"
+
+        - name: PRUEBA DE PING A 8.8.8.8 USANDO LA VRF DEFAULT
+          cisco.ios.ios_ping:
+          dest: 8.8.8.8
+          source: vlan900
+          count: 20
+
+
+
