@@ -9,7 +9,7 @@
           - name: PING 8.8.8.8
             ios_command:
                     commands:
-                            - ping 8.8.8.8 count 20 source vlan900
+                            - ping 8.8.8.8 repeat 20 source vlan900
             register: salida
 
           #- name: SAVE OUTPUT TO ./backups-Cisco/
