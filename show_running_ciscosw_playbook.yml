@@ -1,6 +1,6 @@
 ---
 - name: SHOW RUNNING-CONFIG
-  hosts: COVF-CAL-JPC-SW
+  hosts: 192.168.200.253
   no_log: false
   gather_facts: false
   connection: network_cli
