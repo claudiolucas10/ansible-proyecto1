@@ -1,5 +1,5 @@
 ---
-- name: SHOW RUNNING-CONFIG
+- name: PING
   hosts: LOKI-SW
   no_log: false
   gather_facts: false
@@ -16,8 +16,8 @@
           #  debug:
           #    msg: "{{ salida.stdout }}"
 
-        - name: PRUEBA DE PING A 8.8.8.8 USANDO LA VRF DEFAULT
-          cisco.ios.ios_ping:
+          - name: PRUEBA DE PING A 8.8.8.8 USANDO LA VRF DEFAULT
+            cisco.ios.ios_ping:
             dest: 8.8.8.8
             source: vlan900
             count: 20
