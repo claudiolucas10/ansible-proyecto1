@@ -12,9 +12,9 @@
                             - ping 8.8.8.8 repeat 20 source vlan900
             register: salida
 
-          #- name: SAVE OUTPUT TO ./backups-Cisco/
-          #  debug:
-          #    msg: "{{ salida.stdout }}"
+          - name: OUTPUT
+            debug:
+              msg: "{{ salida.stdout }}"
 
 
 
