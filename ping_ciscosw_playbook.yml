@@ -14,8 +14,8 @@
 
           - name: OUTPUT
             debug:
-              msg: "{{ msg.split('\n') }}"
-              msg: "{{ salida.stdout }}"
+              msg: "{{ msg.split('\n') salida.stdout  }}"
+              #msg: "{{ salida.stdout }}"
 
 
 
