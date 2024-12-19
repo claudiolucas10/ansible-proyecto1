@@ -10,12 +10,11 @@
             ios_command:
                     commands:
                             - ping 8.8.8.8 repeat 20 source vlan900
-            register: salida
+            register: OUTPUT
 
           - name: OUTPUT
             debug:
-              msg: "{{ msg.split('\n') salida.stdout  }}"
-              #msg: "{{ salida.stdout }}"
+              msg: "{{ OUTPUT.stdout }}"
 
 
 
